@@ -3,7 +3,7 @@ import torch
 from numba import jit
 from torch.autograd import Function
 
-def pairwise_distances_asymmetric(x, y=None, cu=0.5, co=2, window_size = 5, threshold=0.5):
+def pairwise_distances_asymmetric(x, y=None, cu=0.8, co=1.5, window_size = 5, threshold=0.5):
     '''
     Input: x is a Nxd matrix
            y is an optional Mxd matirx
